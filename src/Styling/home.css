@@ -1,0 +1,17 @@
+.left {
+    flex: 0.6;
+    height: 100vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 3px solid red;
+    flex-grow: 1;
+}
+
+.main-style {
+    display: flex;
+}
+
+.right {
+    flex: 0.3;
+    border: 3px solid red;
+}

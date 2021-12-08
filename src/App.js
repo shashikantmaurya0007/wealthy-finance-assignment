@@ -4,6 +4,7 @@ import { useEffect } from "react";
 
 import { useDispatch, useSelector } from "react-redux";
 import GetStocks from "./Redux/Actions/StockList";
+import Home from "./Pages/Home";
 
 function App() {
   const dispatch = useDispatch();
@@ -11,7 +12,11 @@ function App() {
   useEffect(() => {
     dispatch(GetStocks());
   }, [dispatch]);
-  return <div className="App">{console.log(stocks)} </div>;
+  return (
+    <div className="App">
+      <Home />
+    </div>
+  );
 }
 
 export default App;
