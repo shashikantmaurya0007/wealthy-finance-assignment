@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { useEffect } from "react";
+
+import { useDispatch, useSelector } from "react-redux";
+import GetStocks from "./Redux/Actions/StockList";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const dispatch = useDispatch();
+  const stocks = useSelector((state) => state.stocksState.stocks);
+  useEffect(() => {
+    dispatch(GetStocks());
+  }, [dispatch]);
+  return <div className="App">{console.log(stocks)} </div>;
 }
 
 export default App;
