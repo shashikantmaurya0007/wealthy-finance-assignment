@@ -1,7 +1,7 @@
 import React from "react";
-
+import "../Styling/left.css";
 function Left() {
-  return <section>left</section>;
+  return <section className="left-styling">left</section>;
 }
 
 export default Left;

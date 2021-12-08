@@ -1,0 +1,11 @@
+.maximum-profit-in-rupees-card {
+    width: inherit;
+    height: 33vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    margin: 5px;
+    border-radius: 1rem;
+    font-weight: bolder;
+}
