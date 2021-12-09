@@ -4,8 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: whitesmoke;
     margin: 5px;
     border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     font-weight: bolder;
 }

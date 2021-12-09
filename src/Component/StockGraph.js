@@ -22,7 +22,9 @@ function StockGraph() {
 
   useEffect(() => {
     dispatch(GetStocks());
-    setLineChartVariable(convertIntoArray(stocks));
+    setTimeout(() => {
+      setLineChartVariable(convertIntoArray(stocks));
+    }, 1000);
   }, [dispatch, stocks]);
   return (
     <div className="stock-graph">

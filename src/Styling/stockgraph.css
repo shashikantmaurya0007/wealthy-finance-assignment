@@ -1,4 +1,5 @@
 .stock-graph {
-    height: 300px !important;
+    height: 260px !important;
     border: 2px solid black;
+    overflow: hidden;
 }

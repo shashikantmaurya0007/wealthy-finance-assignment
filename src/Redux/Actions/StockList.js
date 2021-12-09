@@ -7,6 +7,11 @@ const stocks = [
   { id: 5, date: " 5 - 12 - 2021", curr: 800 },
   { id: 6, date: "6 - 12 - 2021", curr: 900 },
   { id: 7, date: "7 - 12 - 2021", curr: 500 },
+  { id: 8, date: "8 - 12 - 2021", curr: 320 },
+  { id: 9, date: "9 - 12 - 2021", curr: 500 },
+  { id: 10, date: "10 - 12 - 2021", curr: 800 },
+  { id: 11, date: "11 - 12 - 2021", curr: 400 },
+  { id: 12, date: "12 - 12 - 2021", curr: 900 },
 ];
 const fetchStocks = () => {
   return {
